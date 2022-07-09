@@ -1,0 +1,13 @@
+cmake ../ -DCMAKE_INSTALL_PREFIX=/usr/local/mysql \
+-DMYSQL_DATADIR=/usr/local/mysql/data \
+-DMYSQL_UNIX_ADDR=/usr/local/mysql/data/mysql.sock \
+-DWITH_INNOBASE_STORAGE_ENGINE=1 \
+-DENABLED_LOCAL_INFILE=1 \
+-DWITH_EXTRA_CHARSETS=all \
+-DDEFAULT_CHARSET=utf8mb4 \
+-DWITH_BOOST=/opt/software/mysql-8.0.28/boost/boost_1_73_0 \
+-DWITH_DEBUG=ON \
+-DCMAKE_C_FLAGS="-Wno-error" \
+-DCMAKE_CXX_FLAGS="-Wno-error"\
+-DCMAKE_CXX_COMPILER=/usr/local/bin/g++ \
+-DCMAKE_C_COMPILER=/usr/local/bin/gcc
